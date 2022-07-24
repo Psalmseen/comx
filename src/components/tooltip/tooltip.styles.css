@@ -1,0 +1,42 @@
+.tooltip__content {
+  border-radius: 18px;
+  border: 1px solid #d71e0e;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 14px;
+  position: relative;
+}
+.tooltip__arrow {
+  content: '';
+  height: 15px;
+  width: 10px;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: #f00;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+}
+.tooltip__arrow::after {
+  content: '';
+  inset: 0;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: #fff;
+  transform: translateX(-1px);
+}
+.tip__title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.tip__text {
+  font-size: 16px;
+  color: #98a9bc;
+  font-weight: 400;
+}
+.tooltip__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
